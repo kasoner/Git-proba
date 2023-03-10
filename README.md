@@ -1,3 +1,3 @@
-# Git példa video
+# Git Kalkulátor
 
-# u can use this for kalk check full prices
+#hello bello
