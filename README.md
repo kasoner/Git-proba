@@ -1,3 +1,3 @@
 # Git példa video
 
-#hello bello
+# u can use this for kalk check full prices

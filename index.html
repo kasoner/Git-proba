@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Kalkulátor</title>
 </head>
 <body>
+    <div class="containerkalk">
+        <div class="row title">Kalkulátor</div>
+        <div class="row main">
+            <div class="column checkbox-group1">
+                <h3 class="h3kalk">Egyszeri Plusz költség</h3>
+                <label>
+                    <input class="checkbox" type="checkbox" id="seoMaxCheckbox">
+                    SEO MAX 75% feleti Google Bar <span id="seomax"></span>
     
+    
+                </label>
+                <label>
+                    <input class="checkbox" type="checkbox" id="googleAdsCheckbox">
+                    ----------------<span id="google"></span>
+    
+                </label>
+                <label>
+                    <input class="checkbox" type="checkbox" id="seoContentCheckbox">
+                    ----------- <span id="seotart"></span>
+    
+                </label>
+                <label>
+                    <input class="checkbox" type="checkbox" id="ppcContentCheckbox">
+                    PPC tartalom készítés (landing) <span id="ppc"></span>
+    
+                </label>
+                <label>
+                    <input class="checkbox" type="checkbox" id="customFunctionsCheckbox">
+                    Egyéni funkciók fejlesztése (Ajánlatkérés)<span id="egyenifunk"></span>
+    
+                </label>
+            </div>
+            <div class="column checkbox-group3">
+                <h3 class="h3kalk">Havi költség</h3>
+                <label>
+    
+                    Google Ads hirdetéskezelés (PPC BASIC)<span id="seomax"></span>
+    
+                    <input type="range" id="seoMaxrange" name="seoMaxCheckboxhavirange" value="0" min="0" max="12">
+    
+                </label>
+                <label>
+    
+                    Google Ads hirdetéskezelés (PPC PRO)<span id="google"></span>
+    
+                    <input type="range" id="googleAdsMaxrange" name="googleAdsCheckboxhavirange" value="0" min="0" max="12">
+                </label>
+                <label>
+    
+                    SEO tartalom készítés <span id="seotart"></span>
+    
+                    <input type="range" id="seoContentMaxrange" name="seoContentCheckboxhavirange" value="0" min="0"
+                        max="12">
+                </label>
+                <label>
+    
+                    Weboldal Karbantartás <span id="ppc"></span>
+    
+                    <input type="range" id="ppcContentMaxrange" name="ppcContentCheckboxhavirange" value="0" min="0"
+                        max="12">
+                </label>
+                <label>
+    
+                    Egyéni funkciók fejlesztése (Ajánlatkérés) <span id="egyenifunk"></span>
+    
+                    <input type="range" id="customFunctionsMaxrange" name="customFunctionsCheckboxhavirange" value="0"
+                        min="0" max="12">
+                </label>
+            </div>
+            <div class="column checkbox-group2">
+                <h3 class="h3kalk">Oldal Típusok</h3>
+                <label>
+                    <input class="checkboxoldal" type="checkbox" id="templateCheckbox">
+                    Sablon oldal <span id="sablonoldalid"></span>
+                </label>
+                <label>
+                    <input class="checkboxoldal" type="checkbox" id="creativeCheckbox">
+                    Kreatív <span id="krativid"></span>
+                </label>
+                <label>
+                    <input class="checkboxoldal" type="checkbox" id="webshopCheckbox">
+                    Webshop <span id="webshopid"></span>
+                </label>
+            </div>
+        </div>
+    
+        <div class="row oldal-besorolas">
+            <div class="column progress oldal-besorolas-title">Oldal Besorolása:
+                <div class="spanydiv">
+                    <span id="spany">Látogatott</span>
+                </div>
+                <div class="progress-bar"></div>
+    
+                <div class="progress-text"></div>
+            </div>
+    
+        </div>
+    
+        <div class="row osszegzes">
+            <div class="column havi-koltseg-title">
+                <span id="havikoltsegseoMax"></span>
+                <span id="havikoltsegGoogle"></span>
+                <span id="havikoltsegseoContent"></span>
+                <span id="havikoltsegppcContent"></span>
+                <span id="havikoltsegcustomFunctions"></span>
+            </div>
+    
+            <div class="column teljes-ar-title">
+                <span id="teljesar">Teljes Ár:</span>
+                <span id="osszesHavikoltseg">+ÁFA</span>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

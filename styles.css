@@ -1,0 +1,190 @@
+body {
+    background-color: grey;
+}
+
+
+.checkbox-group1 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: tahoma;
+
+}
+
+
+.checkbox-group2 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: tahoma;
+
+}
+
+.checkbox-group3 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: tahoma;
+
+}
+
+.column label {
+    margin-left: 0.5rem;
+}
+
+
+.title {
+
+    color: azure;
+    justify-content: center;
+    background-color: rgb(76, 212, 243);
+    text-shadow: black 0.1rem 0.1rem;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 30pt;
+    font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.progress-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.3em solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.progress-text {
+    position: relative;
+    font-size: 20pt;
+}
+
+.checkbox:checked~.progress-container .progress-bar {
+    animation: progress-bar-fill 1s ease-in-out forwards;
+}
+
+
+@keyframes progress-bar-fill {
+    0% {
+        transform: rotate(-90deg);
+        stroke-dashoffset: 314.16;
+    }
+
+    100% {
+        transform: rotate(270deg);
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.containerkalk {
+    height: 80vh;
+    width: 80vw;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+
+}
+
+.row.header {
+    height: 10%;
+
+}
+
+.row.main {
+    height: 40%;
+
+
+}
+
+.row.oldal-besorolas {
+    height: 20%;
+}
+
+.row.osszegzes {
+    height: 20%;
+    width: 100%;
+}
+
+.h3kalk {
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.main .column {
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    background-color: rgb(148, 97, 34);
+
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress {
+    background-color: rgb(148, 97, 34);
+}
+
+.column.oldal-besorolas-title {
+    justify-content: flex-start;
+    padding-left: 10px;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.column.oldal-besorolas-progress {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.column.havi-koltseg-title {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.column.teljes-ar-title {
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.havi-koltseg-title {
+    width: 50%;
+    flex-direction: column;
+    border-top: none;
+}
+
+.teljes-ar-title {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-top: none;
+    border-left: none;
+}
+
+.osszegzes {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+}
